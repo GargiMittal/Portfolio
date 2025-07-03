@@ -8,25 +8,25 @@
   <meta content="description" name="description">
   <meta name="google" content="notranslate" />
   <meta content="Mashup templates have been developped by Orson.io team" name="author">
-
-  <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-  
+
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
 
   <title>Title page</title>  
 
-<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+  <link href="./main.3f6952e4.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
 
-<body class="">
+<body>
 <div id="site-border-left"></div>
 <div id="site-border-right"></div>
 <div id="site-border-top"></div>
 <div id="site-border-bottom"></div>
- <!-- Add your content of header -->
+
 <header>
-  <nav class="navbar  navbar-fixed-top navbar-default">
+  <nav class="navbar navbar-fixed-top navbar-default">
     <div class="container">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
@@ -36,13 +36,11 @@
         </button>
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
+        <ul class="nav navbar-nav">
           <li><a href="./index.html" title="">01 : Home</a></li>
           <li><a href="./works.html" title="">02 : Works</a></li>
           <li><a href="./about.html" title="">03 : About me</a></li>
         </ul>
-
-
       </div> 
     </div>
   </nav>
@@ -55,126 +53,147 @@
       <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
         <div class="text-center">
           <h1 class="h2">02 : Works</h1>
-        <p>During my college years from 2021, I passionately worked on diverse tech projects, honing my skills and problem-solving abilities. These experiences have been pivotal in shaping my technical proficiency and love for innovation.</p>
+          <p>During my college years from 2021, I passionately worked on diverse tech projects, honing my skills and problem-solving abilities. These experiences have been pivotal in shaping my technical proficiency and love for innovation.</p>
         </div>
       </div>
 
       <div class="col-md-12">
-     
-      <div id="myCarousel" class="carousel slide projects-carousel">
-        <!-- Carousel items -->
-        <div class="carousel-inner">
+        <div id="myCarousel" class="carousel slide projects-carousel">
+          <div class="carousel-inner">
             <div class="item active">
-                <div class="row">
-                    <div class="col-sm-4">
-
-                      <a href="https://github.com/GargiMittal/Epistemico-23/blob/main/README.md" title="" class="black-image-project-hover">
-                        <img src="./assets/images/work01-hover.jpg" alt="" class="img-responsive">
-                      </a>
-                      <div class="card-container card-container-lg">
-                        <h4>001/006</h4>
-                        <h3>Epestimico'23 website</h3>
-                        <p>I got opportunity to work on my college's first ever Annual Fest website.Responsive Website Made using HTML, CSS and JS.</p>
-                        <a href="https://github.com/GargiMittal/Epistemico-23/blob/main/README.md" title="" class="btn btn-default">Discover</a>
-                      </div>
-                    </div>
-
-
-                    <div class="col-sm-4">
-                      <a href="https://github.com/GargiMittal/Resume-Maker" title="" class="black-image-project-hover">
-                        <img src="./assets/images/work02-hover.jpg" alt="" class="img-responsive">
-                      </a>
-                      <div class="card-container card-container-lg">
-                        <h4>002/006</h4>
-                        <h3>Resume Maker</h3>
-                        <p> I made a website during my second hackathon, a web application designed to create professional resumes, featuring options to print and download.</p>
-                        <a href="https://github.com/GargiMittal/Resume-Maker" title="" class="btn btn-default">Discover</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <a href="https://github.com/GargiMittal/Music-Player-with-Python/blob/main/README.md" title="" class="black-image-project-hover">
-                        <img src="./assets/images/work03-hover.jpg" alt="" class="img-responsive">
-                      </a>
-                      <div class="card-container card-container-lg">
-                        <h4>003/006</h4>
-                        <h3>Music Player</h3>
-                        <p>window Application made with Python. using tkinter, os and pygame libraries.</p>
-                        <a href="https://github.com/GargiMittal/Music-Player-with-Python/blob/main/README.md" title="" class="btn btn-default">Discover</a>
-                      </div>
-                    </div>
-                    
-                </div>
-                <!--/row-->
-            </div>
-            <!--/item-->
-            <div class="item">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <a href="#" class="black-image-project-hover">
-                      <img src="./assets/images/work001-04.jpg" alt="Image" class="img-responsive">
-                    </a>
-                    <div class="card-container">
-                      <h4>004/006</h4>
-                      <h3>ReadMe-Generator</h3>
-                      <p>simple AI integrated Markdown generator implemented in Python using the Tkinter library, tkhtmlview, replicate, and markdown2.</p>
-                      <a href="https://github.com/GargiMittal/ReadMe-Generator" class="btn btn-default">Discover</a>
-                    </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <a href="https://github.com/GargiMittal/Sign-Language-Communication-System" class="black-image-project-hover">
+                    <img src="./assets/images/work001-04.jpg" alt="Image" class="img-responsive">
+                  </a>
+                  <div class="card-container" data-aos="slide-up">
+                    <h4>001/009</h4>
+                    <h3>Signease: Unified ASL Translator Hub</h3>
+                    <p>a Python desktop app that recognizes hand gestures via webcam to convert signs into speech, translates YouTube video speech to ASL, and converts live audio to ASL, with an accessible GUI for diverse users.</p>
+                    <a href="https://github.com/GargiMittal/Sign-Language-Communication-System" class="btn btn-default">Discover</a>
                   </div>
-
-                   <div class="col-sm-4">
-                      <a href="https://github.com/GargiMittal/BrickBreaker" class="black-image-project-hover">
-                        <img src="./assets/images/work01-hover.jpg" alt="Image" class="img-responsive">
-                      </a>
-                      <div class="card-container">
-                        <h4>005/006</h4>
-                        <h3>Brick Breaker</h3>
-                        <p>small java project.Recreation of childhood game.- BrickBreaker</p>
-                        <a href="https://github.com/GargiMittal/BrickBreaker" class="btn btn-default">Discover</a>
-                      </div>
-                    </div>
-
-                    
-                    <div class="col-sm-4">
-                      <a href="https://github.com/GargiMittal/Simple-Calculator-With-Python" class="black-image-project-hover">
-                        <img src="./assets/images/work03-hover.jpg" alt="Image" class="img-responsive">
-                      </a>
-                      <div class="card-container">
-                        <h4>006/006</h4>
-                        <h3>One Month HTML</h3>
-                        <p>Collection of website I made while learing HTML including the first ever website i made</p>
-                        <a href="https://github.com/GargiMittal/OneMonth-HTML" class="btn btn-default">Discover</a>
-                      </div>
-                    </div>
-                    
                 </div>
-                <!--/row-->
+
+                <div class="col-sm-4">
+                  <a href="https://github.com/GargiMittal/Epistemico25" class="black-image-project-hover">
+                    <img src="./assets/images/work01-hover.jpg" alt="Image" class="img-responsive">
+                  </a>
+                  <div class="card-container" data-aos="slide-up">
+                    <h4>002/009</h4>
+                    <h3>Epistemico-25 Website</h3>
+                    <p>Led a team of 5 to build “Epistemico-25,” the official college fest website (HTML, CSS, JS, Flask, PostgreSQL)</p>
+                    <a href="https://github.com/GargiMittal/Epistemico25" class="btn btn-default">Discover</a>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <a href="https://github.com/GargiMittal/Herbal-Plant-recommender" class="black-image-project-hover">
+                    <img src="./assets/images/work03-hover.jpg" alt="Image" class="img-responsive">
+                  </a>
+                  <div class="card-container" data-aos="slide-up">
+                    <h4>003/009</h4>
+                    <h3>Herbal Plant Recommender</h3>
+                    <p>Helps users discover suitable herbal plants for their home or garden based on their Indian state and soil type. Built with Python and Flask.</p>
+                    <a href="https://github.com/GargiMittal/Herbal-Plant-recommender" class="btn btn-default">Discover</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-4">
+                  <a href="https://github.com/GargiMittal/Epistemico-23/blob/main/README.md" class="black-image-project-hover">
+                    <img src="./assets/images/work01-hover.jpg" alt="" class="img-responsive">
+                  </a>
+                  <div class="card-container card-container-lg" data-aos="slide-up">
+                    <h4>004/009</h4>
+                    <h3>Epistemico'23 Website</h3>
+                    <p>College's first ever annual fest website. Built with HTML, CSS and JavaScript. Fully responsive design.</p>
+                    <a href="https://github.com/GargiMittal/Epistemico-23/blob/main/README.md" class="btn btn-default">Discover</a>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <a href="https://github.com/GargiMittal/Resume-Maker" class="black-image-project-hover">
+                    <img src="./assets/images/work02-hover.jpg" alt="" class="img-responsive">
+                  </a>
+                  <div class="card-container card-container-lg" data-aos="slide-up">
+                    <h4>005/009</h4>
+                    <h3>Resume Maker</h3>
+                    <p>Web app made during a hackathon to generate professional resumes, with print/download options.</p>
+                    <a href="https://github.com/GargiMittal/Resume-Maker" class="btn btn-default">Discover</a>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <a href="https://github.com/GargiMittal/Music-Player-with-Python/blob/main/README.md" class="black-image-project-hover">
+                    <img src="./assets/images/work03-hover.jpg" alt="" class="img-responsive">
+                  </a>
+                  <div class="card-container card-container-lg" data-aos="slide-up">
+                    <h4>006/009</h4>
+                    <h3>Music Player</h3>
+                    <p>Simple desktop music player built with Python, using Tkinter, pygame and OS module.</p>
+                    <a href="https://github.com/GargiMittal/Music-Player-with-Python/blob/main/README.md" class="btn btn-default">Discover</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-4">
+                  <a href="https://github.com/GargiMittal/ReadMe-Generator" class="black-image-project-hover">
+                    <img src="./assets/images/work001-04.jpg" alt="Image" class="img-responsive">
+                  </a>
+                  <div class="card-container" data-aos="slide-up">
+                    <h4>007/009</h4>
+                    <h3>ReadMe Generator</h3>
+                    <p>AI-based Markdown generator in Python using Tkinter, replicate API, tkhtmlview and markdown2.</p>
+                    <a href="https://github.com/GargiMittal/ReadMe-Generator" class="btn btn-default">Discover</a>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <a href="https://github.com/GargiMittal/BrickBreaker" class="black-image-project-hover">
+                    <img src="./assets/images/work01-hover.jpg" alt="Image" class="img-responsive">
+                  </a>
+                  <div class="card-container" data-aos="slide-up">
+                    <h4>008/009</h4>
+                    <h3>Brick Breaker</h3>
+                    <p>Java project recreating the classic childhood game BrickBreaker.</p>
+                    <a href="https://github.com/GargiMittal/BrickBreaker" class="btn btn-default">Discover</a>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <a href="https://github.com/GargiMittal/OneMonth-HTML" class="black-image-project-hover">
+                    <img src="./assets/images/work03-hover.jpg" alt="Image" class="img-responsive">
+                  </a>
+                  <div class="card-container" data-aos="slide-up">
+                    <h4>009/009</h4>
+                    <h3>One Month HTML</h3>
+                    <p>A collection of websites built during my early HTML learning days — including my first ever website!</p>
+                    <a href="https://github.com/GargiMittal/OneMonth-HTML" class="btn btn-default">Discover</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            
-            <!--/item-->
+          
+
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
         </div>
-        <!--/carousel-inner--> 
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-     </div>
-
-
-
-    <!--/myCarousel-->
-    </div>
-
-
-
+      </div>
     </div>
   </div>
 </div>
-
 
 <footer class="footer-container text-center">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <p><a href="https://github.com/GargiMittal" title="My Github Profile">Github</a> | <a href="https://www.linkedin.com/in/gargi-mittal-199434230/" title="My LinkedIn Profile">LinkedIn</a> | <a href="https://twitter.com/gargimittal_" title="My Twitter Profile">Twitter</a></p>
+        <p>
+          <a href="https://github.com/GargiMittal" title="My Github Profile">Github</a> |
+          <a href="https://www.linkedin.com/in/gargi-mittal-199434230/" title="My LinkedIn Profile">LinkedIn</a> |
+          <a href="https://twitter.com/gargimittal_" title="My Twitter Profile">Twitter</a>
+        </p>
       </div>
     </div>
   </div>
@@ -182,23 +201,19 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
-     navActivePage();
+    navActivePage();
   });
 </script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
-
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-XXXXX-X', 'auto');
-  ga('send', 'pageview');
+  AOS.init({
+    duration: 800,
+    once: true
+  });
 </script>
 
---> <script type="text/javascript" src="./main.70a66962.js"></script></body>
+<script type="text/javascript" src="./main.70a66962.js"></script>
 
+</body>
 </html>
